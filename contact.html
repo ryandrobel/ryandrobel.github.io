@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
 
-      <form action="https://formspree.io/f/xrgodqkp" method="POST">
-        <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name">
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" type="text" name="_replyto">  
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
-          </div>
-          <div>
-            <input type="hidden" name="_subject" value="New submission!">
-          </div>
-          <!-- <input type="text" name="_gotcha" style="display:none"> -->
-            <input type="submit" value="Send">
-          </div>
-          <input type="hidden" name="_next" value="//ryandrobel.github.io/thanks.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <header>
+    <a id="toggleMenu">Menu<a></a>
+    <span class="logo">My WebSite</span>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  
+
+    <form action="https://formspree.io/f/xrgodqkp" method="POST">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="text" name="_replyto">
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <div>
+        <input type="hidden" name="_subject" value="New submission!">
+      </div>
+      <!-- <input type="text" name="_gotcha" style="display:none"> -->
+      <input type="submit" value="Send">
+      </div>
+      <input type="hidden" name="_next" value="//ryandrobel.github.io/thanks.html">
     </form>
-    </body>
+  </main>
+  <script>
+
+    var toggleMenu = document.getElementById('toggleMenu');
+    var nav = document.querySelector('nav');
+    toggleMenu.addEventListener(
+      'click',
+      function(){
+        if(nav.style.display=='block'){
+          nav.style.display='none';
+        }else{
+          nav.style.display='block';
+        }
+      }
+    );
+  </script>
+</body>
+
 </html>
