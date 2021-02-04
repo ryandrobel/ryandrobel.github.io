@@ -1,0 +1,16 @@
+<link rel="author" href="humans.txt" />
+
+/* TEAM */
+Owner: Ryan Drobel.
+Site: ryandrobel@gmail.com.
+Twitter: @ryandrobel.
+Location: Chicago, United States.
+
+/* THANKS */
+Name: Ryan Drobel
+
+/* SITE */
+Last update: 2021/03/02
+Standards: HTML5, CSS3,..
+Components: LAMP.
+Software: N/A
